@@ -24,6 +24,7 @@ class _OnBoardState extends State<OnBoard> {
                 const SizedBox(
                   height: 15,
                 ),
+                Text("test"),
                 Image.asset(
                   Myassests.myLogo,
                   color: MyColors.appbackground,
