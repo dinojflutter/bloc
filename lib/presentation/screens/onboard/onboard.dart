@@ -25,6 +25,7 @@ class _OnBoardState extends State<OnBoard> {
                   height: 15,
                 ),
                 Text("test"),
+                Text("test"),
                 Image.asset(
                   Myassests.myLogo,
                   color: MyColors.appbackground,
