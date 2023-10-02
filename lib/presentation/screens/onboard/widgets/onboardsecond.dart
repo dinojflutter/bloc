@@ -10,7 +10,7 @@ class OnBoardSecond extends StatelessWidget {
     return Column(
       children: [
         Image.asset(
-          "images/border/Image.png",
+          MyAssets.assetsImagesBorderImage,
           height: 333.h,
           width: 333.w,
         ),

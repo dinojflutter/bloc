@@ -24,10 +24,8 @@ class _OnBoardState extends State<OnBoard> {
                 const SizedBox(
                   height: 15,
                 ),
-                Text("test"),
-                Text("test"),
                 Image.asset(
-                  Myassests.myLogo,
+                  MyAssets.assetsImagesLogo1,
                   color: MyColors.appbackground,
                   height: 42.h,
                   width: 139.w,
@@ -42,7 +40,8 @@ class _OnBoardState extends State<OnBoard> {
                   ],
                 ).expand(),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () =>
+                      AutoRouter.of(context).push(const AuthRoute()),
                   style: ElevatedButton.styleFrom(
                       backgroundColor: MyColors.appbackground,
                       shape: RoundedRectangleBorder(

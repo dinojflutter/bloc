@@ -31,8 +31,9 @@ class _SplashscreenState extends State<Splashscreen> {
           child: Center(
             child: FadedScaleAnimation(
               child: Image.asset(
-                Myassests.myLogo,
-                height: 50,
+                MyAssets.assetsImagesLogo1,
+                height: 42.h,
+                width: 139.w,
               ),
             ),
           ),
