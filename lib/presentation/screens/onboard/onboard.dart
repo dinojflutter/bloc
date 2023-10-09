@@ -39,21 +39,14 @@ class _OnBoardState extends State<OnBoard> {
                     OnBoardthird(),
                   ],
                 ).expand(),
-                ElevatedButton(
-                  onPressed: () =>
-                      AutoRouter.of(context).push(const AuthRoute()),
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: MyColors.appbackground,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(18).r),
-                      minimumSize:
-                          Size(MediaQuery.of(context).size.width.w, 50)),
-                  child: "Get Started"
-                      .text
-                      .color(Colors.white)
-                      .size(16.sp)
-                      .fontWeight(FontWeight.w700)
-                      .make(),
+                PrimaryButtom(
+                  title: "Get Started",
+                  // onpressed: () => AutoRouter.of(context).push(
+                  //   const AuthRoute(),
+                  // ),
+                  onpressed: () {
+                    Apiclient().getTags();
+                  },
                 ),
                 SizedBox(
                   height: 60.h,

@@ -34,7 +34,7 @@ class _AuthState extends State<Auth> {
                   height: 42.h,
                   width: 139.w,
                 ).centered(),
-                Spacer(),
+                const Spacer(),
                 "Explore the world, \nBillions of Thoughts."
                     .text
                     .size(25)
@@ -43,37 +43,16 @@ class _AuthState extends State<Auth> {
                     .fontWeight(FontWeight.w500)
                     .make(),
                 25.heightBox,
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: MyColors.appbackground,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(18).r),
-                      minimumSize:
-                          Size(MediaQuery.of(context).size.width.w, 50)),
-                  child: "Login"
-                      .text
-                      .color(Colors.white)
-                      .size(16.sp)
-                      .fontWeight(FontWeight.w700)
-                      .make(),
+                PrimaryButtom(
+                  title: "Login",
+                  onpressed: () =>
+                      AutoRouter.of(context).push(const LoginRoute()),
                 ),
                 12.heightBox,
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.transparent,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(18).r),
-                      side: BorderSide(color: MyColors.white),
-                      minimumSize:
-                          Size(MediaQuery.of(context).size.width.w, 50)),
-                  child: "Registered"
-                      .text
-                      .color(MyColors.white)
-                      .size(16.sp)
-                      .fontWeight(FontWeight.w700)
-                      .make(),
+                OutlineButton(
+                  title: "Registered",
+                  onpressed: () =>
+                      AutoRouter.of(context).push(const RegisteredRoute()),
                 ),
                 10.heightBox
               ],
