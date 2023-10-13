@@ -11,7 +11,8 @@ class MyThemes {
   );
 
   static final dark = ThemeData(
-    colorScheme: ColorScheme.fromSeed(seedColor: MyColors.secondaryColor),
+    colorScheme:
+        ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 0, 0, 0)),
     useMaterial3: true,
     fontFamily: GoogleFonts.poppins().fontFamily,
   );

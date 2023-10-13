@@ -19,9 +19,6 @@ class _AuthState extends State<Auth> {
         ),
       ),
       child: Scaffold(
-        // appBar: AppBar(
-        //   title: Text("Hello world auth"),
-        // ),
         backgroundColor: Colors.transparent,
         body: SafeArea(
           child: Padding(

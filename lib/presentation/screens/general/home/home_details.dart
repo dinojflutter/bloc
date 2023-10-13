@@ -1,23 +1,17 @@
 part of 'home_imports.dart';
 
 @RoutePage()
-class HomeDetails extends StatefulWidget {
-  const HomeDetails({super.key});
+class HomeDetails extends StatelessWidget {
+  const HomeDetails({super.key, required this.post});
 
-  @override
-  State<HomeDetails> createState() => _HomeDetailsState();
-}
+  final Post post;
 
-class _HomeDetailsState extends State<HomeDetails> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: MyColors.appbackground,
-          title: "Netflix Will Charge Money for Password Sharing"
-              .text
-              .ellipsis
-              .make(),
+          title: "Hello".text.ellipsis.make(),
         ),
         body: ListView(
           children: [

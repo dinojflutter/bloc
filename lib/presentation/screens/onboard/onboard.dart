@@ -21,9 +21,7 @@ class _OnBoardState extends State<OnBoard> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                const SizedBox(
-                  height: 15,
-                ),
+                15.h.heightBox,
                 Image.asset(
                   MyAssets.assetsImagesLogo1,
                   color: MyColors.appbackground,
@@ -41,13 +39,11 @@ class _OnBoardState extends State<OnBoard> {
                 ).expand(),
                 PrimaryButtom(
                   title: "Get Started",
-                  // onpressed: () => AutoRouter.of(context).push(
-                  //   const AuthRoute(),
-                  // ),
-                  onpressed: () {
-                    Apiclient().getTags();
-                  },
+                  onpressed: () => AutoRouter.of(context).push(
+                    const AuthRoute(),
+                  ),
                 ),
+                10.h.heightBox,
                 SizedBox(
                   height: 60.h,
                 ),

@@ -15,9 +15,19 @@ class _SplashscreenState extends State<Splashscreen> {
     super.initState();
   }
 
+  // moveToOnboard() async {
+  //   await Future.delayed(
+  //     const Duration(seconds: 3),
+  //     () {
+  //       AutoRouter.of(context).push(const OnBoardRoute());
+  //     },
+  //   );
+  // }
+
   moveToOnboard() async {
     await Future.delayed(const Duration(seconds: 3), () {
-      AutoRouter.of(context).push(const OnBoardRoute());
+      Utils.manipulationlogin(context);
+      // AutoRouter.of(context).push(const OnBoardRoute());
     });
   }
 
@@ -26,16 +36,11 @@ class _SplashscreenState extends State<Splashscreen> {
     return Scaffold(
       backgroundColor: MyColors.appbackground,
       body: Center(
-        child: TextButton(
-          onPressed: () {},
-          child: Center(
-            child: FadedScaleAnimation(
-              child: Image.asset(
-                MyAssets.assetsImagesLogo1,
-                height: 42.h,
-                width: 139.w,
-              ),
-            ),
+        child: FadedScaleAnimation(
+          child: Image.asset(
+            MyAssets.assetsImagesLogo1,
+            height: 42.h,
+            width: 139.w,
           ),
         ),
       ),

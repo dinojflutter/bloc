@@ -9,7 +9,7 @@ class General extends StatefulWidget {
 }
 
 class _GeneralState extends State<General> {
-  List<TabItem> items = [
+  List<TabItem<dynamic>> items = [
     const TabItem(
       icon: FeatherIcons.home,
       // title: 'Home',
